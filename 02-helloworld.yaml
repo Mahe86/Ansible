@@ -1,6 +1,6 @@
 - name: create and run playbook
-  hosts: local
-  connection: local
+  hosts: web
+  #connection: local
   tasks:
   - name: create and run hello world playbook
     ansible.builtin.debug:
