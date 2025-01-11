@@ -1,0 +1,7 @@
+- name: create and run playbook
+  host: local
+  connection: local
+  tasks:
+    -name: create and run hello world playbook
+     ansible.builtin.debug:
+     msg: Hello world playbook

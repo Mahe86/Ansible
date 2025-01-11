@@ -1,7 +1,5 @@
-- name: create and run playbook
-  host: local
-  connection: local
+- name: Ping
+  host: 172.31.92.228
   tasks:
-    -name: create and run hello world playbook
-     ansible.builtin.debug:
-     msg: Hello world playbook
+    -name: Ping the server
+     ansible.builtin.ping:
