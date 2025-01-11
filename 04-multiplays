@@ -13,3 +13,6 @@
   - name: Play2 and Task2
     ansible.builtin.debug:
       msg: "Play2 and Task2"
+
+
+#command to use while executing : ansible-playbook -i inventory.ini 04-multiplays
