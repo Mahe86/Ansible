@@ -3,7 +3,7 @@
   connection: local
   vars:
     COURSE: "Devops with AWS"
-    DURATION: 12hrs
+    DURATION: 120hrs
     TRAINER: Mahe
   tasks:
   - name: Printing variables
