@@ -15,4 +15,4 @@
       msg: "Play2 and Task2"
 
 
-#command to use while executing : ansible-playbook -i inventory.ini 04-multiplays
+#command to use while executing : ansible-playbook -i inventory.ini 04-multiplays.yaml
