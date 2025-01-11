@@ -9,5 +9,5 @@
       
       - name: Start nginx service
         ansible.builtin.service:
-        name: nginx
-        service: started
+          name: nginx
+          service: started
