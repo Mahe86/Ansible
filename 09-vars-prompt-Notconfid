@@ -3,11 +3,14 @@
   connection: local
   vars_prompt:
   - name: NAME
-    prompt: Please enter your name    
+    prompt: Please enter your name
+    private: false # This command will print the data entered. If its not Confidential then you can enable this command
   - name: ADDRESS
     prompt: Please enter your address
+    private: false
   - name: COURSE
     prompt: Please enter your course name
+    private: false
   tasks:
   - name: Print Candidate Information
     ansible.builtin.debug:
