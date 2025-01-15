@@ -5,10 +5,10 @@
     GREET: Play
   # vars_files: # Variables from files
   # - course.yaml
-  vars_prompt: # Variabes from prompt
-  - name: GREET
-    prompt: Enter the value
-    private: false
+  # vars_prompt: # Variabes from prompt
+  # - name: GREET
+  #   prompt: Enter the value
+  #   private: false
   tasks:
   - name: Print variable
     ansible.builtin.debug:
@@ -18,3 +18,4 @@
       # Preference
       # 1. Command line args
       # 2. Variables from files
+      # 3. Prompt
