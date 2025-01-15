@@ -10,6 +10,6 @@
     prompt: Enter the value
     private: false
   tasks:
-  - name: Print variable from Inventory
+  - name: Print variable
     ansible.builtin.debug:
       msg: Value is {{ GREET }}
