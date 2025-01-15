@@ -1,4 +1,4 @@
-- name: Printing Variable based on preference
+- name: "Printing Variable based on preference"
   hosts: local
   connection: local
   vars: # Play level variables
