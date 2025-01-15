@@ -11,16 +11,17 @@
     private: false
   tasks:
   - name: Print variable
-    vars:
-      GREET: Task
+    # vars:
+    #   GREET: Task
     ansible.builtin.debug:
       msg: "Value is {{ GREET }}"
 
 
       # Preference
       # 1. Command line args
-      # 2. Variables from files
-      # 3. Prompt
-      # 4. Play level variables
-      # 5. Inventory
-      # 6. 
+      # 2. Task
+      # 3. Variables from files
+      # 4. Prompt
+      # 5. Play level variables
+      # 6. Inventory
+      # 7.
