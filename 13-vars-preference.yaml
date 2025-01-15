@@ -1,16 +1,18 @@
 - name: Printing Variables on preference
   hosts: local
   connection: local
-  # vars: # Play level variables
-  #   GREET: Play
-  # vars_files: # Variables from files
-  # - course.yaml
-  # vars_prompt: # Variabes from prompt
-  # - name: GREET
-  #   prompt: Enter the value
-  #   private: false
+  vars: # Play level variables
+    GREET: Play
+  vars_files: # Variables from files
+  - course.yaml
+  vars_prompt: # Variabes from prompt
+  - name: GREET
+    prompt: Enter the value
+    private: false
   tasks:
   - name: Print variable
+    vars:
+      GREET: Task
     ansible.builtin.debug:
       msg: "Value is {{ GREET }}"
 
@@ -20,3 +22,5 @@
       # 2. Variables from files
       # 3. Prompt
       # 4. Play level variables
+      # 5. Inventory
+      # 6. 
