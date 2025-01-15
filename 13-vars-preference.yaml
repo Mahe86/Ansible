@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars: # Play level variables
-  GREET: Play
+    GREET: Play
   vars_files: # Variables from files
   - course.yaml
   vars_prompt: # Variabes from prompt
