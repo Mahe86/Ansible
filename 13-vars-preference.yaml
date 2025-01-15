@@ -1,8 +1,8 @@
 - name: Printing Variables on preference
   hosts: local
   connection: local
-  vars: # Play level variables
-    GREET: Play
+  # vars: # Play level variables
+  #   GREET: Play
   # vars_files: # Variables from files
   # - course.yaml
   # vars_prompt: # Variabes from prompt
@@ -19,3 +19,4 @@
       # 1. Command line args
       # 2. Variables from files
       # 3. Prompt
+      # 4. Play level variables
