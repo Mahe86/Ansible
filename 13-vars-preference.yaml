@@ -11,8 +11,8 @@
     private: false
   tasks:
   - name: Print variable
-    # vars:
-    #   GREET: Task
+    vars: # Task level variables
+      GREET: Task
     ansible.builtin.debug:
       msg: "Value is {{ GREET }}"
 
@@ -24,4 +24,3 @@
       # 4. Prompt
       # 5. Play level variables
       # 6. Inventory
-      # 7.
