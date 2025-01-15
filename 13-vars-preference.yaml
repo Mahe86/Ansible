@@ -1,8 +1,8 @@
-- name: "Printing Variable based on preference"
+- name: Printing Variables on preference
   hosts: local
   connection: local
   vars: # Play level variables
-  GREET: "Play"
+  GREET: Play
   vars_files: # Variables from files
   - course.yaml
   vars_prompt: # Variabes from prompt
@@ -12,4 +12,4 @@
   tasks:
   - name: Print variable
     ansible.builtin.debug:
-      msg: Value is {{ GREET }}
+      msg: "Value is {{ GREET }}"
