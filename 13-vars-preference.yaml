@@ -3,8 +3,8 @@
   connection: local
   vars: # Play level variables
     GREET: Play
-  vars_files: # Variables from files
-  - course.yaml
+  # vars_files: # Variables from files
+  # - course.yaml
   vars_prompt: # Variabes from prompt
   - name: GREET
     prompt: Enter the value
@@ -13,3 +13,8 @@
   - name: Print variable
     ansible.builtin.debug:
       msg: "Value is {{ GREET }}"
+
+
+      # Preference
+      # 1. Command line args
+      # 2. Variables from files
