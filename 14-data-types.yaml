@@ -4,11 +4,11 @@
   vars:
     course: "Devops with AWS" # String
     duration: 120  # number
-    topics: # list
+    topics: # list, defined by [] means list in O/P
     - linux
     - Ansible
     - Terraform
-    tools: # map or dictionary
+    tools: # map or dictionary, {} this means map in O/P
       ci: jenkins
       cloud: AWS
       container: docker
