@@ -1,8 +1,8 @@
 - name: Check if the value is greater than 10 or not
   hosts: local
   connection: local
-  vars:
-    my_number: 13
+  # vars:
+  #   my_number: 13
   tasks:
   - name: print if number is greater than 10
     ansible.builtin.debug:
