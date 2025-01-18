@@ -15,14 +15,4 @@
       msg: "output is {{ command_result }}"
 
 
-
-
-
-
-
-
-
-
-
-
-     # "ansible.builtin.command: ls -l > /tmp/output.txt" - This will not run since ls will have access only to shell module
+# "ansible.builtin.command: ls -l > /tmp/output.txt" - This will not run since ls will have access only to shell module
