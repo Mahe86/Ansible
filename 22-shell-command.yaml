@@ -4,6 +4,25 @@
   tasks:
   - name: Execute ls command
     #ansible.builtin.command: ls -l > /tmp/output.txt
-    ansible.builtin.shell: ls -l > /tmp/output-shell.txt
+    ansible.builtin.shell: ls -ltr > /tmp/output-shell.txt
+
+  - name: Execute ls command
+    ansible.builtin.command: ls -ltr
+    regiter: command_result
+
+  - name: Print the output
+    ansible.builtin.debug:
+      msg: "output is {{ command_result }}"
+
+
+
+
+
+
+
+
+
+
+
 
      # "ansible.builtin.command: ls -l > /tmp/output.txt" - This will not run since ls will have access only to shell module
