@@ -8,7 +8,7 @@
 
   - name: Execute ls command
     ansible.builtin.command: ls -ltr
-    regiter: command_result
+    register: command_result
 
   - name: Print the output
     ansible.builtin.debug:
